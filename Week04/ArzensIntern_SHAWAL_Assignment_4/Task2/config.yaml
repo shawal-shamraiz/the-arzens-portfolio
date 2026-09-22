@@ -1,0 +1,31 @@
+# config.yaml
+# Configuration file for the THE ARZENS Threat Intelligence Enricher.
+#
+# IMPORTANT: Never commit real API keys to GitHub.
+# Put your real keys here on your own computer only, and add config.yaml
+# to your .gitignore file before pushing your project.
+
+api_keys:
+  # Get a free key at https://www.virustotal.com/gui/join-us
+  virustotal: "YOUR_VIRUSTOTAL_API_KEY_HERE"
+
+  # Get a free key at https://www.abuseipdb.com/register
+  abuseipdb: "YOUR_ABUSEIPDB_API_KEY_HERE"
+
+  # Get a free key at https://otx.alienvault.com
+  otx: "YOUR_OTX_API_KEY_HERE"
+
+settings:
+  # How many seconds to wait between API calls (basic rate limiting)
+  rate_limit_seconds: 15
+
+  # How many times to retry a failed request before giving up
+  max_retries: 3
+
+  # File used to store cached API results (avoids duplicate requests)
+  cache_file: "cache.json"
+
+  # Which APIs to use. Set to false to skip an API even if a key is present.
+  use_virustotal: true
+  use_abuseipdb: true
+  use_otx: false

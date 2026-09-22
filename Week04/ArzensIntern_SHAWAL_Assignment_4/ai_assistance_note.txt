@@ -1,0 +1,13 @@
+During the completion of this assignment, I used AI tools including ChatGPT, Claude AI, and DeepSeek as learning and support resources.
+
+These tools helped me:
+
+Understand the assignment requirements and tasks.
+Learn the concepts and understand the purpose of the code before implementing it.
+Debug errors and fix issues when I got stuck.
+Understand Python syntax, libraries, and functions used in the project.
+Improve the structure and formatting of my documentation and README file.
+Clarify programming concepts and explain sections of code that I found difficult.
+Receive guidance while writing and organizing the code, after which I reviewed and understood the final implementation myself.
+
+I used these AI tools as educational assistants rather than submitting their responses without understanding them. I reviewed the generated code, made necessary adjustments, tested the program, and ensured that I understood how the major components worked before including them in my final submission.

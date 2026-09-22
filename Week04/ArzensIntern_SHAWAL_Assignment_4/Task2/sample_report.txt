@@ -1,0 +1,68 @@
+============================================================
+Indicator: 185.220.101.42 (ip)
+Query Time: 2026-08-01T14:30:00Z
+
+VIRUSTOTAL:
+  malicious_count: 15
+  suspicious_count: 3
+  total_engines: 70
+  detection_ratio: 15/70
+  Verdict: MALICIOUS
+
+ABUSEIPDB:
+  confidence_score: 92
+  total_reports: 234
+  last_reported: 2026-07-28T09:12:00+00:00
+  Verdict: MALICIOUS
+
+OVERALL VERDICT: MALICIOUS
+============================================================
+
+============================================================
+Indicator: example.com (domain)
+Query Time: 2026-08-01T14:31:20Z
+
+VIRUSTOTAL:
+  malicious_count: 0
+  suspicious_count: 0
+  total_engines: 68
+  detection_ratio: 0/68
+  Verdict: CLEAN
+
+OVERALL VERDICT: CLEAN
+============================================================
+
+============================================================
+Indicator: 44d88612fea8a8f36de82e1278abb02f (hash)
+Query Time: 2026-08-01T14:33:05Z
+
+VIRUSTOTAL:
+  malicious_count: 62
+  suspicious_count: 1
+  total_engines: 71
+  detection_ratio: 62/71
+  Verdict: MALICIOUS
+
+OVERALL VERDICT: MALICIOUS
+============================================================
+
+============================================================
+Indicator: 8.8.8.8 (ip)
+Query Time: 2026-08-01T14:34:40Z
+
+VIRUSTOTAL:
+  malicious_count: 0
+  suspicious_count: 0
+  total_engines: 70
+  detection_ratio: 0/70
+  Verdict: CLEAN
+
+ABUSEIPDB:
+  confidence_score: 0
+  total_reports: 0
+  last_reported: None
+  Verdict: CLEAN
+
+OVERALL VERDICT: CLEAN
+============================================================
+

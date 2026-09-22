@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-08-01T14:30:00Z",
+  "alert_type": "Suspicious Outbound Connection",
+  "indicator": "185.220.101.42",
+  "indicator_type": "ip",
+  "severity": "high",
+  "source": "Firewall"
+}

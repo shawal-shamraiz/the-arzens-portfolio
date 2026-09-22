@@ -1,0 +1,56 @@
+indicator,type,source
+185.220.101.30,ip,IDS
+185.220.101.31,ip,Firewall
+185.220.101.32,ip,Firewall
+185.220.101.33,ip,IDS
+185.220.101.34,ip,Email Gateway
+185.220.101.35,ip,EDR
+185.220.101.36,ip,EDR
+185.220.101.37,ip,EDR
+185.220.101.38,ip,IDS
+185.220.101.39,ip,Firewall
+185.220.101.40,ip,IDS
+185.220.101.41,ip,IDS
+185.220.101.42,ip,SIEM
+185.220.101.43,ip,Firewall
+185.220.101.44,ip,SIEM
+45.155.205.200,ip,Proxy
+45.155.205.201,ip,Firewall
+45.155.205.202,ip,Firewall
+45.155.205.203,ip,Firewall
+45.155.205.204,ip,EDR
+45.155.205.205,ip,EDR
+45.155.205.206,ip,SIEM
+45.155.205.207,ip,SIEM
+45.155.205.208,ip,Firewall
+45.155.205.209,ip,SIEM
+45.155.205.210,ip,EDR
+45.155.205.211,ip,IDS
+45.155.205.212,ip,IDS
+45.155.205.213,ip,IDS
+45.155.205.214,ip,SIEM
+8.8.8.8,ip,Proxy
+1.1.1.1,ip,EDR
+9.9.9.9,ip,Proxy
+malicious-test-domain.com,domain,SIEM
+phishy-login-page.net,domain,Email Gateway
+free-gift-cards-now.xyz,domain,Firewall
+update-your-account-security.com,domain,EDR
+example.com,domain,IDS
+google.com,domain,Proxy
+wikipedia.org,domain,Email Gateway
+totally-not-malware.biz,domain,Email Gateway
+secure-bank-login-verify.com,domain,EDR
+cheap-software-download.ru,domain,EDR
+e8ffbac1723e1da473ea4b57e589499d,hash,Email Gateway
+2095312189753de6ad47dfe20cbe97ec,hash,Firewall
+7288edd0fc3ffcbe93a0cf06e3568e28521687bc,hash,Firewall
+dce61ba4545470f28462da22e930ac83d6e9f28a3d8882e3284e9bd127cd259f,hash,Proxy
+cc7014cb9ffa34c87932b40a7431c0f4,hash,Firewall
+2b7c1221b7576dafb596059d808161d39ee66789,hash,Email Gateway
+192.0.2.1,ip,Email Gateway
+192.0.2.2,ip,SIEM
+192.0.2.3,ip,Email Gateway
+192.0.2.4,ip,Firewall
+192.0.2.5,ip,IDS
+192.0.2.6,ip,Proxy

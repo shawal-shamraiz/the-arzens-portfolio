@@ -1,0 +1,74 @@
+[
+  {
+    "indicator": "185.220.101.42",
+    "indicator_type": "ip",
+    "query_time": "2026-08-01T14:30:00Z",
+    "sources": {
+      "virustotal": {
+        "malicious_count": 15,
+        "suspicious_count": 3,
+        "total_engines": 70,
+        "detection_ratio": "15/70",
+        "verdict": "MALICIOUS"
+      },
+      "abuseipdb": {
+        "confidence_score": 92,
+        "total_reports": 234,
+        "last_reported": "2026-07-28T09:12:00+00:00",
+        "verdict": "MALICIOUS"
+      }
+    },
+    "overall_verdict": "MALICIOUS"
+  },
+  {
+    "indicator": "example.com",
+    "indicator_type": "domain",
+    "query_time": "2026-08-01T14:31:20Z",
+    "sources": {
+      "virustotal": {
+        "malicious_count": 0,
+        "suspicious_count": 0,
+        "total_engines": 68,
+        "detection_ratio": "0/68",
+        "verdict": "CLEAN"
+      }
+    },
+    "overall_verdict": "CLEAN"
+  },
+  {
+    "indicator": "44d88612fea8a8f36de82e1278abb02f",
+    "indicator_type": "hash",
+    "query_time": "2026-08-01T14:33:05Z",
+    "sources": {
+      "virustotal": {
+        "malicious_count": 62,
+        "suspicious_count": 1,
+        "total_engines": 71,
+        "detection_ratio": "62/71",
+        "verdict": "MALICIOUS"
+      }
+    },
+    "overall_verdict": "MALICIOUS"
+  },
+  {
+    "indicator": "8.8.8.8",
+    "indicator_type": "ip",
+    "query_time": "2026-08-01T14:34:40Z",
+    "sources": {
+      "virustotal": {
+        "malicious_count": 0,
+        "suspicious_count": 0,
+        "total_engines": 70,
+        "detection_ratio": "0/70",
+        "verdict": "CLEAN"
+      },
+      "abuseipdb": {
+        "confidence_score": 0,
+        "total_reports": 0,
+        "last_reported": null,
+        "verdict": "CLEAN"
+      }
+    },
+    "overall_verdict": "CLEAN"
+  }
+]

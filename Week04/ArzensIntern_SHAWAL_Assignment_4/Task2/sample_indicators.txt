@@ -1,0 +1,15 @@
+# sample_indicators.txt
+# One indicator per line. Lines starting with # are ignored.
+# The tool guesses the type automatically (ip, domain, hash, or url).
+
+185.220.101.42
+45.155.205.233
+8.8.8.8
+malicious-test-domain.com
+example.com
+44d88612fea8a8f36de82e1278abb02f
+5d41402abc4b2a76b9719d911017c592
+e99a18c428cb38d5f260853678922e03abd8390
+2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae
+http://malicious-test-site.example
+https://example.com/login

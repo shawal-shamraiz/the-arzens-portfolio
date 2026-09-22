@@ -1,0 +1,5 @@
+indicator,type,query_time,overall_verdict,sources_checked
+185.220.101.42,ip,2026-08-01T14:30:00Z,MALICIOUS,"virustotal, abuseipdb"
+example.com,domain,2026-08-01T14:31:20Z,CLEAN,virustotal
+44d88612fea8a8f36de82e1278abb02f,hash,2026-08-01T14:33:05Z,MALICIOUS,virustotal
+8.8.8.8,ip,2026-08-01T14:34:40Z,CLEAN,"virustotal, abuseipdb"

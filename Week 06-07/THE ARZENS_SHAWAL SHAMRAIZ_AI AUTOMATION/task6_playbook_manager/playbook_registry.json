@@ -1,0 +1,32 @@
+[
+  {
+    "name": "phishing_response",
+    "description": "Automated phishing response playbook (Task 5): extracts indicators, checks reputation, scores risk, and applies a tiered response.",
+    "script_path": "../task5_phishing_playbook/phishing_playbook.py",
+    "working_dir": "../task5_phishing_playbook",
+    "default_args": ["--email-file", "sample_email.json", "--dry-run"],
+    "required_env": [],
+    "required_files": ["config.yaml", "blacklist_domains.txt", "sample_email.json"],
+    "enabled": true
+  },
+  {
+    "name": "openai_log_analyzer",
+    "description": "AI-assisted security log analyzer using GPT-4 (Task 2). Summarizes raw logs and suggests severity/action.",
+    "script_path": "../task2_openai_analyzer/openai_analyzer.py",
+    "working_dir": "../task2_openai_analyzer",
+    "default_args": ["--log-file", "sample_logs.txt", "--dry-run"],
+    "required_env": ["OPENAI_API_KEY"],
+    "required_files": ["sample_logs.txt"],
+    "enabled": true
+  },
+  {
+    "name": "hf_alert_classifier",
+    "description": "Local, open-source alert classifier using a Hugging Face zero-shot model (Task 3). Labels alerts Threat/Non-threat.",
+    "script_path": "../task3_hf_classifier/hf_classifier.py",
+    "working_dir": "../task3_hf_classifier",
+    "default_args": ["--input", "sample_alerts.csv", "--output", "classified_output.csv", "--mock"],
+    "required_env": [],
+    "required_files": ["sample_alerts.csv", "requirements.txt"],
+    "enabled": true
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "sender": "billing@totally-legit-invoice.ru",
+  "subject": "URGENT: Invoice #40921 Payment Overdue - Action Required",
+  "body": "Dear Customer, your invoice is overdue. Please review and pay immediately to avoid service interruption. Click here to view: http://secure-login-verify.com/invoice/40921 or http://account-verify-update.info/pay-now. Failure to respond within 24 hours will result in account suspension.",
+  "urls": [
+    "http://secure-login-verify.com/invoice/40921",
+    "http://account-verify-update.info/pay-now"
+  ],
+  "attachment_hash": "44d88612fea8a8f36de82e1278abb02f"
+}

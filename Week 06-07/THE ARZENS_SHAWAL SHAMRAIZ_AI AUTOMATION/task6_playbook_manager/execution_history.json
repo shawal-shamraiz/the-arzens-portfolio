@@ -1,0 +1,29 @@
+[
+  {
+    "playbook": "phishing_response",
+    "started_at": "2026-09-12T07:54:08.544065+00:00",
+    "duration_seconds": 0.164,
+    "exit_code": 0,
+    "success": true,
+    "stdout_tail": "un/simulated) ---\nTo: secops@example.com\nSubject: [Phishing Playbook] High severity case \u2014 sender billing@totally-legit-invoice.ru\nSeverity: High (score 80/100)\nSender: billing@totally-legit-invoice.ru\nSubject: URGENT: Invoice #40921 Payment Overdue - Action Required\nReasons:\n  - Domain(s) on local blacklist: totally-legit-invoice.ru, account-verify-update.info, secure-login-verify.com\n  - Email includes an attachment hash for a suspicious/unsolicited file.\n  - Domain(s) use a common phishing lookalike pattern: account-verify-update.info, secure-login-verify.com\n--- end notification ---\n\n\n[+] Case CASE-20260912-075408-21d3: severity=High score=80/100 mode=DRY-RUN\n[+] Action: {'type': 'auto_block', 'targets': {'domains': ['totally-legit-invoice.ru', 'account-verify-update.info', 'secure-login-verify.com'], 'hash': '44d88612fea8a8f36de82e1278abb02f'}, 'executed': False, 'note': 'DRY-RUN: block was NOT applied. Re-run with --live to enforce.'}\n[+] Full audit entry written to playbook.log\n",
+    "stderr_tail": ""
+  },
+  {
+    "playbook": "hf_alert_classifier",
+    "started_at": "2026-09-12T07:54:08.758303+00:00",
+    "duration_seconds": 0.039,
+    "exit_code": 0,
+    "success": true,
+    "stdout_tail": " via LSAS\n  [4/12] Non-threat   conf=0.900  User submitted a routine IT support ticket requesting a pass\n  [5/12] Threat       conf=0.680  Outbound connection detected to a known command and control \n  [6/12] Non-threat   conf=0.820  Daily antivirus definition update applied across all endpoin\n  [7/12] Threat       conf=0.680  Suspicious PowerShell script with obfuscated base64 payload \n  [8/12] Non-threat   conf=0.820  Employee badge access recorded for normal business hours ent\n  [9/12] Threat       conf=0.680  Phishing email with malicious attachment reported by employe\n  [10/12] Non-threat   conf=0.840  Print job sent to the third floor network printer\n  [11/12] Threat       conf=0.680  Ransomware note file detected on shared drive \\\\FILESRV01\\fi\n  [12/12] Non-threat   conf=0.900  Quarterly access review completed by IT compliance team\n[+] Wrote 12 classified rows to classified_output.csv\n\n[+] Summary: 12 classified | 6 Threat | 5 flagged Uncertain (below 0.7 confidence threshold)\n",
+    "stderr_tail": ""
+  },
+  {
+    "playbook": "openai_log_analyzer",
+    "started_at": "2026-09-12T07:54:08.841814+00:00",
+    "duration_seconds": 0.066,
+    "exit_code": 0,
+    "success": true,
+    "stdout_tail": "-----\nEntry ID     : 4861d29e3a\nLog          : 2026-09-10T08:22:31Z proxy: Denied connection to known malicious domain evil-c2-domain.example dst_i\nSeverity     : Informational\nSummary      : Traffic was denied by an existing control; no immediate action indicated.\nAction       : No action required; retain for trend analysis.\nIndicators   : 192.0.2.200\n----------------------------------------------------------------------\nEntry ID     : ebdc69789e\nLog          : 2026-09-10T09:00:00Z auth: user=admin password changed successfully from 10.0.0.5\nSeverity     : Low\nSummary      : Log entry does not match a known high-risk pattern; manual review suggested.\nAction       : Analyst should review the raw entry for context not captured by automated rules.\nIndicators   : 10.0.0.5, admin\n----------------------------------------------------------------------\n[+] JSON written to analysis_results.json\n[+] CSV written to analysis_results.csv\n\n[+] Analyzed 10 entries. Mode: DRY-RUN (offline heuristic)\n",
+    "stderr_tail": ""
+  }
+]

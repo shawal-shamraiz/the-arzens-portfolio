@@ -1,0 +1,21 @@
+# Configuration for phishing_playbook.py
+# THE ARZENS Internship — Task 5
+
+blacklist_file: blacklist_domains.txt
+active_blocks_file: active_blocks.json
+playbook_log: playbook.log
+log_retention_days: 180
+
+risk_thresholds:
+  high: 70     # score >= 70   -> auto-block (reversible, human-notified)
+  medium: 30   # 30 <= score < 70 -> analyst review queue
+  # score < 30                  -> log only
+
+virustotal:
+  enabled: false                      # set true to enable live VT lookups
+  api_key_env: VIRUSTOTAL_API_KEY     # name of env var holding the API key
+  max_requests_per_minute: 4          # matches VirusTotal free-tier limit
+
+notification:
+  security_team_email: secops@example.com
+  send_real_email: false              # keep false unless SMTP is configured

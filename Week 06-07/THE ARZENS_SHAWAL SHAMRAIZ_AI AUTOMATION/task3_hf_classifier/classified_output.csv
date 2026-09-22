@@ -1,0 +1,13 @@
+alert_id,alert_text,predicted_label,confidence,status
+A0001,Multiple failed login attempts followed by a successful login from a new geolocation for user jdoe,Threat,0.860,Confirmed
+A0002,Scheduled backup job completed successfully with no errors,Non-threat,0.930,Confirmed
+A0003,EDR flagged a process performing credential dumping via LSASS memory access on host FIN-WKS-02,Threat,0.680,Uncertain — human review required
+A0004,User submitted a routine IT support ticket requesting a password reset,Non-threat,0.900,Confirmed
+A0005,Outbound connection detected to a known command and control domain from host SRV-DB-01,Threat,0.680,Uncertain — human review required
+A0006,Daily antivirus definition update applied across all endpoints,Non-threat,0.820,Confirmed
+A0007,Suspicious PowerShell script with obfuscated base64 payload executed on workstation WKSTN-114,Threat,0.680,Uncertain — human review required
+A0008,Employee badge access recorded for normal business hours entry,Non-threat,0.820,Confirmed
+A0009,Phishing email with malicious attachment reported by employee via mail client plugin,Threat,0.680,Uncertain — human review required
+A0010,Print job sent to the third floor network printer,Non-threat,0.840,Confirmed
+A0011,Ransomware note file detected on shared drive \\FILESRV01\finance,Threat,0.680,Uncertain — human review required
+A0012,Quarterly access review completed by IT compliance team,Non-threat,0.900,Confirmed

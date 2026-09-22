@@ -1,0 +1,7 @@
+# Local domain blacklist — one domain per line. Lines starting with # are comments.
+# This is a sample/demo list; a real deployment would sync this from a threat-intel feed.
+totally-legit-invoice.ru
+secure-login-verify.com
+paypal-account-support.net
+evil-c2-domain.example
+account-verify-update.info

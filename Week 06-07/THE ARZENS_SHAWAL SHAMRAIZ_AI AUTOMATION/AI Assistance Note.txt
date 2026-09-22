@@ -1,0 +1,7 @@
+AI Assistance Note
+
+During the completion of this assignment, I used ChatGPT, Claude AI, and DeepSeek as learning and support tools.
+
+These AI tools helped me understand the assignment requirements, learn the concepts , and clarify Python programming concepts. They were also used to help me debug errors, understand code when I got stuck, improve documentation formatting, and refine the structure of my files.
+
+Some code suggestions and explanations were generated with AI assistance, but I reviewed, tested, and understood the final implementation before including it in my submission. I remained responsible for verifying the correctness of the code, making necessary modifications, and ensuring that all submitted work met the assignment requirements.s

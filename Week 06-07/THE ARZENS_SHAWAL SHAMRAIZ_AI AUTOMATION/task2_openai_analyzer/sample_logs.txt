@@ -1,0 +1,10 @@
+2026-09-10T02:14:03Z sshd[1021]: Failed password for invalid user admin from 203.0.113.45 port 51322 ssh2
+2026-09-10T02:14:05Z sshd[1021]: Failed password for invalid user admin from 203.0.113.45 port 51330 ssh2
+2026-09-10T02:14:07Z sshd[1021]: Failed password for invalid user root from 203.0.113.45 port 51340 ssh2
+2026-09-10T03:02:11Z firewall: DROP src=198.51.100.22 dst=10.0.0.5 dport=445 proto=TCP reason=policy_deny
+2026-09-10T04:45:52Z edr-agent: Detected process powershell.exe spawning encoded command, possible shellcode injection, host=WKSTN-114, hash=44d88612fea8a8f36de82e1278abb02f
+2026-09-10T05:12:00Z ids: Nmap scan detected from 192.0.2.77 targeting ports 1-1024 on 10.0.0.0/24
+2026-09-10T06:30:44Z auth: user=jsmith successful login from 10.0.0.14 via VPN
+2026-09-10T07:05:19Z mail-gateway: Blocked attachment invoice_0912.exe from sender billing@totally-legit-invoice.ru flagged as trojan
+2026-09-10T08:22:31Z proxy: Denied connection to known malicious domain evil-c2-domain.example dst_ip=192.0.2.200
+2026-09-10T09:00:00Z auth: user=admin password changed successfully from 10.0.0.5

@@ -1,0 +1,13 @@
+alert_id,alert_text
+A0001,Multiple failed login attempts followed by a successful login from a new geolocation for user jdoe
+A0002,Scheduled backup job completed successfully with no errors
+A0003,EDR flagged a process performing credential dumping via LSASS memory access on host FIN-WKS-02
+A0004,User submitted a routine IT support ticket requesting a password reset
+A0005,Outbound connection detected to a known command and control domain from host SRV-DB-01
+A0006,Daily antivirus definition update applied across all endpoints
+A0007,Suspicious PowerShell script with obfuscated base64 payload executed on workstation WKSTN-114
+A0008,Employee badge access recorded for normal business hours entry
+A0009,Phishing email with malicious attachment reported by employee via mail client plugin
+A0010,Print job sent to the third floor network printer
+A0011,Ransomware note file detected on shared drive \\FILESRV01\finance
+A0012,Quarterly access review completed by IT compliance team

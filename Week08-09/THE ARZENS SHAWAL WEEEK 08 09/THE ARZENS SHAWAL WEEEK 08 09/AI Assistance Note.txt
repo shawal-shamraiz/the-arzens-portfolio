@@ -1,0 +1,2 @@
+AI Assistance Note
+AI tools were used as a learning and development aid during this assignment. Assistance was used for understanding concepts, clarifying instructions, reviewing code, identifying and correcting errors, and improving documentation and explanations. The implementation was reviewed and tested by me, and I take responsibility for the final submitted work.

@@ -1,0 +1,24 @@
+EC2 Instance Manager — Usage
+
+Setup:
+  pip install boto3
+  aws configure
+  (Edit config.py and set AWS_REGION to the region your instances are in)
+
+Commands:
+
+  List all instances (ID, State, Type, Public IP):
+    python ec2_manager.py list
+
+  Start a stopped instance (asks "Are you sure?" first):
+    python ec2_manager.py start i-0123456789abcdef0
+
+  Stop a running instance (asks "Are you sure?" first):
+    python ec2_manager.py stop i-0123456789abcdef0
+
+Notes:
+  - Replace "i-0123456789abcdef0" with a real instance ID from your account,
+    which you can get by running "python ec2_manager.py list" first.
+  - If you type "no" at the confirmation prompt, the action is cancelled and
+    nothing happens to the instance.
+  - Only instances in the region set in config.py will show up.

@@ -1,0 +1,57 @@
+DATA DICTIONARY - normalizer.py output
+Author: Shawal Shamraiz
+THE ARZENS - Beginner Track, Assignment 3, Task 2
+
+This describes every field in sample_clean.csv and sample_clean.json.
+Both files use the same 8 fields; the JSON version has one extra field
+(original_log) that isn't in the CSV.
+
+field         type     example                          notes
+------------- -------- -------------------------------- ------------------------------------------------
+timestamp     string   2026-07-20T14:23:45Z              Normalized to ISO 8601 UTC. If the original
+                                                           timestamp couldn't be parsed, this is set to
+                                                           the literal string "UNKNOWN" instead.
+
+source_ip     string   192.168.1.100                     The IPv4 address the event came from. Set to
+                                                           "UNKNOWN" if the log didn't have one, or if the
+                                                           IP that was there wasn't a valid IPv4 address.
+
+event_type    string   FIREWALL / AUTH / DNS / FILE      Uppercase category of the event. Raw values like
+                                                           "LOGIN" or "FILE_ACCESS" get mapped to one of
+                                                           these 4. Anything we don't recognize just gets
+                                                           uppercased and kept as-is instead of dropped.
+
+user          string   alice                              Username tied to the event. If the log entry
+                                                           doesn't have a user (like a firewall rule), this
+                                                           is set to "SYSTEM".
+
+action        string   ALLOW / DENY / SUCCESS / FAILURE /
+                        QUERY / RESPONSE / READ / WRITE   Uppercase verb describing what happened.
+
+target        string   10.0.0.50, malicious.example.com,
+                        /etc/passwd                        Whatever the event was aimed at - could be a
+                                                           destination IP, a domain, a file path, or a
+                                                           hostname depending on the log type.
+
+bytes         integer  15234                              Number of bytes involved, if the log tracked it.
+                                                           Defaults to 0 for log types that don't report
+                                                           bytes (auth, dns, file access).
+
+status        string   VALID / FLAGGED                    VALID means nothing looked off. FLAGGED means at
+                                                           least one validation check caught something -
+                                                           an unparseable timestamp, an invalid or private
+                                                           IP address, a port outside 1-65535, or a
+                                                           negative bytes value. Check parse_errors.log and
+                                                           original_log for the specific reason.
+
+original_log  string   (full raw log line)                JSON output only. The exact original line from
+                                                           the input file, kept so you can go back and check
+                                                           what actually got normalized, and why something
+                                                           may have been flagged.
+
+Notes on FLAGGED status:
+A private IP address (10.x.x.x, 172.16-31.x.x, 192.168.x.x) always causes a
+FLAGGED status, since we treat that as worth a second look during analysis,
+not necessarily as an error. This means a lot of the sample rows will show
+up as FLAGGED just because the sample data uses private IPs a lot - that's
+expected, not a bug.

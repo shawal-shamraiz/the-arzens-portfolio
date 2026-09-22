@@ -1,0 +1,17 @@
+# requirements.txt
+# ArzensIntern_ShawalShamraiz - THE ARZENS Beginner Track, Assignment 3
+
+# This project (normalizer.py, checksum.py, test_reproducibility.py) only
+# uses Python's standard library - argparse, csv, json, re, sys, hashlib,
+# subprocess, and datetime. None of those need to be installed with pip,
+# they come with Python itself.
+#
+# So there's nothing to actually pin a version for here. I'm leaving this
+# file in place (rather than deleting it) because the assignment asks for
+# it, and to make it clear this was a deliberate choice and not something
+# I forgot to fill in.
+#
+# Minimum Python version required: Python 3.9+
+# (developed and tested on Python 3.12.3)
+
+# no external packages required

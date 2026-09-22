@@ -1,0 +1,26 @@
+[2026-07-20 14:23:45] FIREWALL src=192.168.1.100 dst=10.0.0.50 action=ALLOW port=443 bytes=15234
+[2026-07-20 14:24:10] FIREWALL src=203.0.113.5 dst=198.51.100.20 action=DENY port=22 bytes=0
+2026-07-20T14:25:00Z,auth-server,LOGIN,alice,192.168.1.100,SUCCESS
+2026-07-20T14:26:15Z,auth-server,LOGIN,mallory,203.0.113.9,FAILURE
+Jul 20 14:27:30 dns-server named[1234]: query: malicious.example.com IN A from 192.168.1.100
+Jul 20 14:28:05 dns-server named[1234]: query: safe-example.org IN A from 203.0.113.5
+{"timestamp": "2026-07-20 14:29:00", "event": "FILE_ACCESS", "user": "bob", "file": "/etc/passwd", "action": "READ"}
+{"timestamp": "2026-07-20 14:30:00", "event": "FILE_ACCESS", "user": "carol", "file": "/var/www/config.php", "action": "WRITE"}
+[2026-07-20 14:31:20] FIREWALL src=999.168.1.100 dst=10.0.0.60 action=ALLOW port=8080 bytes=512
+2026-07-20T14:32:00Z,auth-server,LOGIN,dave,192.168.1.55
+Xyz 20 14:33:10 dns-server named[1234]: query: badclock.example.com IN A from 192.168.1.100
+{"timestamp": "2026-07-20 14:34:00", "event": "FILE_ACCESS", "user": "eve", "file": "/var/log/secure"
+###SYSTEM REBOOT INITIATED### unexpected maintenance window, ignore this line
+[2026-07-20 14:23:45] FIREWALL src=192.168.1.100 dst=172.16.5.5 action=ALLOW port=443 bytes=9001
+[2026-07-20 14:35:40] FIREWALL src=192.168.1.100 dst=10.0.0.75 action=ALLOW port=70000 bytes=2048
+2026-07-20T14:36:00Z,auth-server,LOGIN,frank,10.0.0.15,SUCCESS
+2026-07-20T14:37:00Z,auth-server,LOGIN,grace,203.0.113.44,SUCCESS
+{"timestamp": "2026-07-20 14:38:00", "event": "SERVICE_RESTART", "action": "RESTART", "target": "nginx"}
+[2026-07-20 14:23:45] FIREWALL src=192.168.1.100 dst=10.0.0.90 action=DENY port=445 bytes=0
+Jul 20 14:39:15 dns-server named[1234]: query: internal-app.local IN A from 10.0.0.22
+{"timestamp": "2026-07-20 14:40:00", "event": "FILE_ACCESS", "user": "heidi", "target": "/home/heidi/report.docx", "action": "READ"}
+2026-07-20T14:41:00Z,auth-server,LOGIN,admin,192.168.1.201,FAILURE
+
+2026-07-20T14:41:05Z,auth-server,LOGIN,admin,192.168.1.202,FAILURE
+2026-07-20T14:41:09Z,auth-server,LOGIN,admin,192.168.1.203,FAILURE
+[2026-07-20 14:42:30] FIREWALL src=203.0.113.5 dst=8.8.8.8 action=ALLOW port=53 bytes=128

@@ -1,0 +1,14 @@
+File: input (ArzensIntern_ShawalShamraiz_sample_mixed_logs.txt)
+MD5: 01dba43d7e6f09fcc6811c8a7810243b
+SHA256: 0afd3d0cb34f5c3c64b969a402046ffd21c8ce34d012870e21512ca7676692f4
+Generated: 2026-08-02T06:22:34Z
+
+File: csv_output (ArzensIntern_ShawalShamraiz_sample_clean.csv)
+MD5: fd2344984fa996c6c2de89da971fa79c
+SHA256: 72e2cbd55f1df2524b9c59e93215741f170dcab6831193ceef87708e4d7f7d9e
+Generated: 2026-08-02T06:22:34Z
+
+File: json_output (ArzensIntern_ShawalShamraiz_sample_clean.json)
+MD5: 2fbbde9d13de8981bdf8082003673973
+SHA256: b93cc0256f93a8249b9bcb3b23f6d3cc8257cba9d9a33bfe0c38005305d858d6
+Generated: 2026-08-02T06:22:34Z

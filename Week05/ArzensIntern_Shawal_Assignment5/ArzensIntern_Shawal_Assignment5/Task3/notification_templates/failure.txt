@@ -1,0 +1,10 @@
+Subject: [ALERT] Playbook Failure - {playbook_name}
+
+A playbook execution has failed.
+
+Playbook: {playbook_name}
+Run started: {start_time}
+Error: {error_message}
+
+Please review the execution history and logs.
+- Playbook Manager

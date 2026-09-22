@@ -1,0 +1,10 @@
+Subject: Daily Playbook Summary - {date}
+
+Total runs: {total_runs}
+Successful: {success_count}
+Failed: {failure_count}
+
+Recent runs:
+{run_list}
+
+- Playbook Manager

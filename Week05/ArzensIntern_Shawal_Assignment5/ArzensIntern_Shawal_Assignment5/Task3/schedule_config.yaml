@@ -1,0 +1,19 @@
+# Playbook Manager - Scheduling Configuration
+# interval options: hourly, daily
+# 'time' only applies to daily jobs (24h HH:MM)
+
+schedules:
+  - playbook: phishing_playbook
+    interval: hourly
+    enabled: false
+
+  - playbook: malware_response
+    interval: daily
+    time: "02:00"
+    enabled: false
+
+# NOTE: entries default to enabled: false so scheduling does not start
+# automatically on submission/grading. Set enabled: true and run
+# `python playbook_manager.py --schedule <playbook> --interval <hourly|daily>`
+# to start the scheduler loop for that playbook (uses the `schedule` library,
+# runs in the foreground until stopped with Ctrl+C).

@@ -1,0 +1,12 @@
+Subject: [HIGH RISK ALERT] {playbook_name}
+
+A high-risk security event was detected and handled automatically.
+
+Playbook: {playbook_name}
+Run ID: {run_id}
+Risk Score: {risk_score}/100
+Decision: {decision}
+Actions taken: {actions}
+
+Immediate analyst attention is recommended.
+- Playbook Manager

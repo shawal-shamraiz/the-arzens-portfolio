@@ -1,0 +1,30 @@
++==========================================================+
+| PHISHING RESPONSE PLAYBOOK v1.0                         |
++==========================================================+
+Input: security@paypa1.com - "Urgent: Verify Your Account"
+
+STEP 1: Extracting indicators...
+  Domain: paypa1.com
+  URLs: ['http://evil-site.com/login']
+  Hash: d41d8cd98f00b204e9800998ecf8427e
+
+STEP 2: Checking reputation...
+  Domain bad: True
+  Malicious URLs: ['http://evil-site.com/login']
+  Hash known malware: False
+
+STEP 3: Calculating risk score...
+  Known bad sender domain (+40)
+  Suspicious/malicious URL detected (+30): ['http://evil-site.com/login']
+  Suspicious subject keyword(s) ['urgent', 'verify', 'account'] (+30)
+  Total Risk Score: 100/100 - HIGH
+
+STEP 4: Taking action...
+  [DRY-RUN MODE - No actions taken]
+  Would perform: quarantine_email, block_sender, notify_security_team
+
+STEP 5: Generating report...
+  Security report generated for: security@company.com
+
+AUDIT LOG: playbook.log
+REPORT FILE: report_playbook_run_20260809_155910_2462f5.txt

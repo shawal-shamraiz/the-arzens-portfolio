@@ -1,0 +1,34 @@
+# Phishing Playbook Configuration
+# Do NOT put real API keys or secrets directly in this file.
+# Use a .env file + python-dotenv, or environment variables, instead.
+
+thresholds:
+  high: 70      # score >= high   -> HIGH risk
+  medium: 40    # score >= medium -> MEDIUM risk (below = LOW)
+
+notify:
+  security_team: "security@company.com"
+  user_cc: true
+
+blacklist_path: "blacklist_domains.txt"
+malware_hash_path: "malware_hashes.txt"
+log_path: "playbook.log"
+
+suspicious_keywords:
+  - "urgent"
+  - "verify"
+  - "suspended"
+  - "password"
+  - "click here"
+  - "confirm"
+  - "account"
+  - "security alert"
+  - "act now"
+  - "limited time"
+
+# Optional: VirusTotal integration (disabled by default).
+# If enabled, the API key must come from an environment variable
+# (e.g. VT_API_KEY), never hardcoded here.
+api:
+  virustotal_enabled: false
+  virustotal_api_key_env: "VT_API_KEY"

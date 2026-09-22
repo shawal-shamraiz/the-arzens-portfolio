@@ -1,0 +1,8 @@
+# Known bad domains - one per line, lowercase
+# Lines starting with # are ignored
+paypa1.com
+evil-site.com
+secure-login-update.com
+account-verify-now.net
+free-gift-claim.biz
+banklogin-support.com

@@ -1,0 +1,7 @@
+{
+  "sender": "security@paypa1.com",
+  "subject": "Urgent: Verify Your Account",
+  "body": "Click here to verify: http://evil-site.com/login",
+  "attachment_hash": "d41d8cd98f00b204e9800998ecf8427e",
+  "reported_by": "user@company.com"
+}

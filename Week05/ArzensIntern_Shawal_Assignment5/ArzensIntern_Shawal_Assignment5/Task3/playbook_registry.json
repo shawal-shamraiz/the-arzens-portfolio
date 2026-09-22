@@ -1,0 +1,28 @@
+{
+  "playbooks": [
+    {
+      "name": "phishing_playbook",
+      "description": "Phishing email response",
+      "trigger_type": "manual",
+      "enabled": true,
+      "script": "sample_playbooks/phishing_playbook.py",
+      "config": "sample_playbooks/config.yaml"
+    },
+    {
+      "name": "malware_response",
+      "description": "Malware alert handling",
+      "trigger_type": "manual",
+      "enabled": true,
+      "script": "sample_playbooks/malware_response.py",
+      "config": "sample_playbooks/config.yaml"
+    },
+    {
+      "name": "failed_login",
+      "description": "Brute force detection",
+      "trigger_type": "manual",
+      "enabled": false,
+      "script": "sample_playbooks/failed_login.py",
+      "config": "sample_playbooks/failed_login_config.yaml"
+    }
+  ]
+}
